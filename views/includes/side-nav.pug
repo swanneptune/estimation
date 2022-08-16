@@ -1,0 +1,14 @@
+.side-menu-container
+  .list-group
+    // home
+    if group == 'home'
+      .list-group-item.active
+        i.fas.fa-house
+        =t('Home')
+    else
+      a.list-group-item.list-group-item-action(href="/admin") 
+        i.fas.fa-house
+        =t('Home')
+    a.list-group-item.list-group-item-action(href="#") 
+      i.fas.fa-inbox
+      | Other

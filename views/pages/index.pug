@@ -1,0 +1,11 @@
+extends ../layouts/layout
+
+block content
+  div.app
+  header.app-header
+    img.app-logo(src='/img/logo.svg' alt='logo')
+    p=t('Hello World')
+    a.app-link(href='https://getbootstrap.com/docs/5.0/getting-started/introduction/' target='_blank' rel='noopener noreferrer')
+      | Learn 
+      s React
+      | &nbsp;Bootstrap
